@@ -1,26 +1,49 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Extracted from Annette Lashes logo: pink watercolor + gold splatter + black */
+  --pink: #D4A0B5;
+  --pink-light: #E8C4D4;
+  --pink-soft: #F0D4DF;
+  --pink-wash: #FBF0F3;
+  --pink-deep: #B8849A;
+  --gold: #A67C2E;
+  --gold-light: #C49A4A;
+  --gold-dark: #8B6914;
+  --gold-wash: rgba(166,124,46,0.08);
+  --black: #1A1A1A;
+  --black-soft: #2D2628;
+  --charcoal: #3A3035;
+  --pearl: #FBF5F7;
+  --pearl-warm: #F5EBF0;
+  --pearl-deep: #EDE0E6;
+  --white: #FFFFFF;
+  --cream: #FFFAF8;
+  --grey: #8A7880;
+  --grey-light: #B5A8AE;
+  --green-wa: #25d366;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-pink: var(--pink); --color-pink-light: var(--pink-light); --color-pink-soft: var(--pink-soft);
+  --color-pink-wash: var(--pink-wash); --color-pink-deep: var(--pink-deep);
+  --color-gold: var(--gold); --color-gold-light: var(--gold-light); --color-gold-dark: var(--gold-dark); --color-gold-wash: var(--gold-wash);
+  --color-black: var(--black); --color-black-soft: var(--black-soft); --color-charcoal: var(--charcoal);
+  --color-pearl: var(--pearl); --color-pearl-warm: var(--pearl-warm); --color-pearl-deep: var(--pearl-deep);
+  --color-white: var(--white); --color-cream: var(--cream);
+  --color-grey: var(--grey); --color-grey-light: var(--grey-light); --color-green-wa: var(--green-wa);
+  --font-display: var(--font-cormorant); --font-body: var(--font-heebo);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+::selection { background: var(--pink); color: var(--white); }
+body { background: var(--cream); color: var(--black); font-family: var(--font-body), sans-serif; }
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--pearl); }
+::-webkit-scrollbar-thumb { background: var(--pink-deep); border-radius: 2px; }
+html { scroll-behavior: smooth; }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
+@utility shadow-card { box-shadow: 0 0 60px rgba(26,26,26,0.03), 0 0 30px rgba(26,26,26,0.02), 0 0 15px rgba(26,26,26,0.015), 0 0 6px rgba(26,26,26,0.01); }
+@utility shadow-card-hover { box-shadow: 0 0 60px rgba(212,160,181,0.08), 0 0 30px rgba(26,26,26,0.03), 0 0 15px rgba(26,26,26,0.02); }
+@utility shadow-float { box-shadow: 7px 7px 22px rgba(26,26,26,0.06), -7px 7px 22px rgba(26,26,26,0.06); }
+
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } }
