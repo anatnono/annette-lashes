@@ -5,11 +5,11 @@ import Image from 'next/image';
 
 const images = [
   { src: '/annette-lashes/images/work-1.jpg', alt: 'הלחמת ריסים — עין ירוקה עם ריסים מושלמות', label: 'הלחמת ריסים' },
-  { src: '/annette-lashes/images/work-2.jpg', alt: 'ריסים דרמטיות וולום', label: 'ריסים וולום' },
-  { src: '/annette-lashes/images/lash-close.jpg', alt: 'תקריב ריסים מולחמות', label: 'תקריב ריסים' },
-  { src: '/annette-lashes/images/eye-close.jpg', alt: 'עיניים עם ריסים מושלמות', label: 'מראה טבעי' },
-  { src: '/annette-lashes/images/bridal-makeup.jpg', alt: 'איפור כלות מקצועי', label: 'איפור כלות' },
-  { src: '/annette-lashes/images/beauty-salon.jpg', alt: 'סטודיו ליופי', label: 'הסטודיו' },
+  { src: '/annette-lashes/images/work-2.jpg', alt: 'עיצוב גבות — עין ירוקה זווית שונה', label: 'עיצוב גבות' },
+  { src: '/annette-lashes/images/work-3.jpg', alt: 'ריסים ווליום — עין חומה עם ריסים מלאות', label: 'ריסים ווליום' },
+  { src: '/annette-lashes/images/work-4.jpg', alt: 'ריסים מגה ווליום — עין חומה בזווית', label: 'ריסים מגה ווליום' },
+  { src: '/annette-lashes/images/work-5.jpg', alt: 'הלחמה דרמטית — עין חומה מבט צד', label: 'הלחמה דרמטית' },
+  { src: '/annette-lashes/images/work-6.jpg', alt: 'תהליך העבודה — תקריב ריסים עם מברשת', label: 'תהליך העבודה' },
 ];
 
 const itemVariants = {

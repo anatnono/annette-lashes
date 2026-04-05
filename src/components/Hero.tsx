@@ -4,10 +4,10 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 const stats = [
-  { value: '8+', label: 'שנות ניסיון' },
-  { value: '5,000+', label: 'לקוחות' },
-  { value: 'כל הסגנונות', label: 'הלחמה' },
-  { value: '100%', label: 'חומרים פרימיום' },
+  { value: '12+', label: 'שנות ניסיון' },
+  { value: '150+', label: 'לקוחות' },
+  { value: 'חומרים', label: 'פרימיום' },
+  { value: 'הגעה', label: 'לבית הלקוח' },
 ];
 
 const fadeUp = {
@@ -24,7 +24,7 @@ export default function Hero() {
     <section className="relative min-h-dvh flex flex-col justify-center items-center text-center overflow-hidden">
       {/* Background image — client's own work-2.jpg */}
       <Image
-        src="/annette-lashes/images/work-2.jpg"
+        src="/annette-lashes/images/work-5.jpg"
         alt="הלחמת ריסים מקצועית — תקריב ריסים דרמטיות"
         fill
         priority
@@ -59,8 +59,7 @@ export default function Hero() {
             variants={fadeUp}
             className="font-body text-base sm:text-lg text-pearl-deep/90 max-w-2xl leading-relaxed"
           >
-            הלחמת ריסים בכל הסגנונות, הרמת ריסים וגבות, עיצוב מדויק ואיפור מקצועי לאירועים —
-            הכל בגישה אישית, עם חומרים פרימיום ותוצאות שמדברות בעד עצמן.
+            הלחמת ריסים בכל הסגנונות, הרמת ריסים וגבות, הדבקת ריסים ואיפור כלות וערב — הכל בגישה אישית, עם חומרים פרימיום ותוצאות שמדברות בעד עצמן.
           </motion.p>
 
           <motion.div custom={3} variants={fadeUp} className="flex flex-col sm:flex-row gap-4 mt-4">
